@@ -8,7 +8,7 @@ export const siteTitle = 'Next.js Sample Website'
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div className={'container'}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -29,8 +29,10 @@ export default function Layout({ children, home }) {
           <>
             <img
               src="/images/profile.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
+              className={`${styles.headerHomeImage} ${utilStyles.borderCircle} img-thumbnail`}
               alt={name}
+              width="200"
+                  height="200"
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
@@ -40,14 +42,16 @@ export default function Layout({ children, home }) {
               <a>
                 <img
                   src="/images/profile.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
+                  className={`${styles.headerImage} ${utilStyles.borderCircle} img-thumbnail`}
                   alt={name}
+                  width="200"
+                  height="200"
                 />
               </a>
             </Link>
             <h2 className={utilStyles.headingLg}>
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <a className={utilStyles.colorInherit}></a>
               </Link>
             </h2>
           </>

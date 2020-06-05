@@ -11,17 +11,22 @@ export default function Home() {
       </Head>
 
       <main>
+      <h1 className="title">
+          Welcome to Learn Next.js!
+          <br/> 
+          <Link href="https://localhost:9000/oauth2/auth?audience=&amp;client_id=facebook-photo-backup&amp;max_age=0&amp;nonce=wvuthrmsuejawuwhfzovjrzb&amp;prompt=&amp;redirect_uri=http%3A%2F%2F127.0.0.1%3A9010%2Fcallback&amp;response_type=code&amp;scope=openid+offline+photos.read&amp;state=uskbjmbmiiswptdlfbgggyuf"><a>Authorize application!</a></Link>
+          
+        </h1>
+       
+        OR
         <h1>
-        Explore <Link href="/posts/first-post"><a>pages!</a></Link>
-
-        </h1>
+          <br/>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Learn Next.js!</a>
+        <Link href="/posts/first-post"><a>Login!</a></Link>
         </h1>
 
-        <p className="description">
-          Start learning by editing<code>pages/index.js</code>
-        </p>
+        </h1>
+    
 
       </main>
 

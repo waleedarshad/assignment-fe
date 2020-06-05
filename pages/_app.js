@@ -1,7 +1,7 @@
 import '../styles/global.css'
 import App from 'next/app'
 import withRedux from 'next-redux-wrapper';
-import React from 'react'
+// import React from 'react'
 import { Provider } from 'react-redux';
 import {createWrapper} from 'next-redux-wrapper'
 import store from '../store/store';
